@@ -101,7 +101,7 @@ def to_simple_babylonian(num):
 
     for index, value in enumerate(base_60):
         if index != 0:
-            babylonian += '    '
+            babylonian += '\u2003'
         if value == 0 and index != 0:
             babylonian += bab_python_zero
         else:

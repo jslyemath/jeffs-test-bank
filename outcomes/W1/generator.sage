@@ -22,14 +22,18 @@ class Generator(BaseGenerator):
             return egy, modern, 'ancient Egyptian'
 
         other_system = choice([rom_modern, egy_modern])
-        to_ancient_func, to_modern_func = shuffle([bab_modern, other_system])
+        chosen_systems = [bab_modern, other_system]
+        shuffle(chosen_systems)
+        to_ancient_func, to_modern_func = chosen_systems
 
         to_a_ancient, to_a_modern, to_a_system = to_ancient_func()
         to_m_ancient, to_m_modern, to_m_system = to_modern_func()
 
         return {
-            'to_ancient_prompt': f'Convert {to_m_modern} to ancient {to_m_system}.',
-            'to_ancient_answer': f'{to_a_ancient}',
-            'to_modern_prompt': f'Convert {to_a_ancient} from {to_a_system} to modern Hindu-Arabic base ten.',
-            'to_modern_answer': f'{to_m_modern}'
+            'to_a_modern': f'{int(to_a_modern):,}',
+            'to_a_system': f'{to_a_system}',
+            'to_a_ancient': f'{to_a_ancient}',
+            'to_m_ancient': f'{to_m_ancient}',
+            'to_m_system': f'{to_m_system}',
+            'to_m_modern': f'{int(to_m_modern):,}'
         }
