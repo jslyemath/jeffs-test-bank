@@ -5,16 +5,14 @@
             <p>Convert {{to_a_modern}} to {{to_a_system}}.</p>
             <p>
             <image source="assets/W1/Hmillion.png" description="Heh - one million."/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
-            <image source="assets/W1/null.png"/>
+            <image source="assets/W1/null.png" width="0"/>
+            <image source="assets/W1/null.png" width="0"/>
+            <image source="assets/W1/null.png" width="0"/>
+            <image source="assets/W1/null.png" width="0"/>
+            <image source="assets/W1/null.png" width="0"/>
+            <image source="assets/W1/null.png" width="0"/>
+            <image source="assets/W1/null.png" width="0"/>
+            <image source="assets/W1/null.png" width="0"/>
             <image source="assets/W1/Hthousand.png" description="Water lily - one thousand."/>
             </p>
         </content>
